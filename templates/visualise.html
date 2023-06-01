@@ -1,0 +1,16 @@
+<center>
+    <h1>Visualise</h1>
+<p>
+    {% for i in lab %}
+    {% for j in i %}
+    {% if j == " " %}
+    .
+    {% elif j == "X" %}
+    {% else %}
+
+    {{ j }}
+    {% endif %}
+    {% endfor %}<br>
+    {% endfor %}
+</p>
+</center>
